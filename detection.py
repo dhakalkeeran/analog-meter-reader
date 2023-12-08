@@ -374,7 +374,7 @@ def detect(model_path, orig_img, save_img=False):
                         line = (
                             (cls, *xywh, conf) if False else (cls, *xywh)
                         )  # label format
-                        with open("random" + ".txt", "a") as f:
+                        with open("temp" + ".txt", "a") as f:
                             f.write(("%g " * len(line)).rstrip() % line + "\n")
 
                     if save_img:  # Add bbox to image
